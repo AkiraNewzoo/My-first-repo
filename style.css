@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *,*::before,*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+  :focus,:active {
+    outline: none;
+  }
+
+  a {
+    color: #1D4040;
+  }
+
+  a:focus,a:active {
+    outline: none;
+  }
+  
+  nav,footer,header,aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input, button, textarea {font-family: inherit;}
+  
+  input::-ms-clear {display: none}
+  button{cursor: pointer;}
+  button::-moz-focus-inner{padding: 0;border: 0;}
+  a, a:visited {
+    color: #1D4040;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #085C8C;
+    text-shadow: 0px 2px 3px #00AFE6;
+  }
+
+  ul li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: 400;
+    color: #000;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: "Cormorant Garamond", "pt sans", serif;
+    background: #F8FFF4;
+  }
+
+/* Хэдер */
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 94px;
+  padding: 40px 48px 40px 48px;
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+
+    color: #1D4040;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+#title {
+display: flex;
+width: 1322px;
+height: 432px;
+flex-direction: column;
+justify-content: right;
+flex-shrink: 0;
+padding: 40px 48px 40px 48px;
+margin-bottom: 64px;
+}
+
+#description {
+display: flex;
+color: #1D4040;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;  
+margin-bottom: 76px;  
+}
+
+#kosh {
+  display: flex;
+  color: #68C0E7;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+  h1 {
+  display: flex;
+  color: #1D4040;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+
+  h2 {
+  color: #1D4040;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  }
+
+  #bgkosha {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../kosha/Img/kosha.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  }
+
+/* 1я секция */
+  #about {
+  width: 100%;
+  height: 780px;
+  flex-shrink: 0;
+  background-color: #CFECF9;
+  padding-top: 120px;
+  background-image: url("../kosha/Img/Star.svg");
+  background-position: center 48px;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-attachment: inherit
+  }
+
+  #about h2 {
+  text-align: center;
+  margin-bottom: 48px;
+  }
+
+  #about p {
+  text-align: center;
+  color: #1D4040;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 78px;
+  }
+  
+  #galery {
+    display: flex;
+    width: 100%;
+    height: 320px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #card1 {
+    background-image: url("../kosha/Img/kosha1.jpg");
+    width: 384px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #card2 {
+    background-image: url("/kosha/Img/kosha2.jpg");
+    width: 384px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #card3 {
+    background-image: url("/kosha/Img/kosha3.jpg");
+    width: 384px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #card4 {
+    background-image: url("/kosha/Img/kosha4.jpg");
+    width: 384px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #card5 {
+    background-image: url("../kosha/Img/kosha5.jpg");
+    width: 384px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (max-width:1440px) {
+
+  #card1, #card2, #card3, #card4, #card4, #card5 {
+    width: 288px;
+    height: 240px;
+  }
+  }
+
+/* 2я секция */
+  #tdo {
+  width: 100%;
+  height: 815px;  
+  background-image: url("../kosha/Img/bg-tdo.jpeg");
+  background-color: #1D4040;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-shrink: 0;
+  }
+
+  #tdo h2 {
+    display: flex;
+    margin-left: 48px;
+    margin-top: 120px;
+    margin-bottom: 48px;
+    color: #D6EEEE;
+  }
+
+  #tdo p {
+    color: #D1EEEE;
+    text-align: left;
+    float: left;
+    margin-left: 48px;
+    margin-right: 48px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  #tdo-kosha {
+    margin-top: 120px;
+    margin-right: 48px;
+    background-image: url(../kosha/Img/tdo-kosha@1920.jpeg);
+    width: 528px;
+    height: 631px;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+/* 3я секция */
+
+#toghether {
+display: flex;
+background-image: url("../kosha/Img/heart.svg");
+background-position: 1596px 80px;
+background-size: right 80px top 64px;
+background-repeat: no-repeat;
+background-attachment: inherit;
+padding-left: 48px;
+padding-right: 48px;
+width: 100%;
+height: 798px;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+background-color: #A3E1F0;
+}
+
+#toghether h2 {
+  margin-top: 120px;
+  color: #1D4040;
+  align-items: right;
+  text-align: right;
+  margin-left: 48px;
+  margin-top: 120px;
+  margin-bottom: 48px;
+}
+
+#toghether p {
+  color: #1D4040;
+  text-align: right;
+  float: right;
+  margin-left: 48px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+#tgd-content {
+  align-items: right;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#tgd-photo {
+  border-radius: 16px;
+  background: url("/../kosha/Img/tgd.jpg"), lightgray 50% / cover no-repeat;
+  box-shadow: 0px 10px 15px 4px #6BAFBF;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 528px;
+  height: 702px;
+  flex-shrink: 0;
+}
+
+/* Футер */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300;
+  background: #011109;
+}
+
+footer p {
+color: #D1EEEE;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 58px;
+}
+
+footer h3 {
+color: #437979;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 8px;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 94px;
+}
+
+@media (max-width:1440px) {
+
+  #title
+
+  #about {
+    height: 708px;
+  }
+
+  #galery {
+    width: auto;
+    height: 240px;
+  }
+}
